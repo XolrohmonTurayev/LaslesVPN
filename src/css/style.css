@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+body {
+  background-color: var(--color-bg-color);
+  font-family: var(--font-primary);
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+.container {
+  width: 100%;
+  max-width: 1140px;
+  padding: 0 20px;
+  margin: 0 auto;
+}

@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="src/images/favicon.svg"
+      type="image/x-icon"
+    />
+    <!-- Tailwind CSS script import -->
+    <style type="text/tailwindcss">
+      @theme {
+        --font-primary: "Rubik";
+        --color-bg-color: #F53838;
+        --color-primary: #f53838;
+        --color-dark-text: #0B132A;
+        --color-text-color: #4f5665;
+      }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Lucide Icon script import -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Rubik:300,regular,500,600,700,800,900,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/css/style.css" />
+    <title>LaslesVPN</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="flex items-center justify-between py-4 gap-10">
+          <a href="index.html">
+            <img src="src/images/logo.svg" alt="" class="w-36" />
+          </a>
+          <nav class="hidden lg:block">
+            <ul class="flex items-center justify-center gap-10">
+              <li class="font-primary text-text-color">About</li>
+              <li class="font-primary text-text-color">Features</li>
+              <li class="font-primary text-text-color">Pricing</li>
+              <li class="font-primary text-text-color">Testimonials</li>
+              <li class="font-primary text-text-color">Help</li>
+            </ul>
+          </nav>
+          <nav class="flex items-center justify-center gap-7.5">
+            <button
+              class="h-8 aspect-square flex lg:hidden items-center justify-center border border-primary text-primary rounded-md"
+            >
+              <i data-lucide="menu"></i>
+            </button>
+            <a href="#!" class="hidden lg:inline-block font-medium text-dark-text hover:text-primary transition-all duration-400">Sign In</a>
+            <a href="#!" class="hidden lg:flex items-center justify-center font-medium h-11.25 px-11.25 border border-primary text-primary rounded-full hover:text-white hover:bg-primary transition-all duration-400">Sign Up</a>
+    </header>
+    <main></main>
+    <footer></footer>
+    <script>
+      lucide.createIcons({
+        attrs: {
+          class: ["my-custom-class"],
+          "stroke-width": 1.75,
+        },
+      });
+    </script>
+  </body>
+</html>
