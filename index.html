@@ -12,9 +12,9 @@
     <style type="text/tailwindcss">
       @theme {
         --font-primary: "Rubik";
-        --color-bg-color: #F53838;
+        --color-bg-color: #f53838;
         --color-primary: #f53838;
-        --color-dark-text: #0B132A;
+        --color-dark-text: #0b132a;
         --color-text-color: #4f5665;
       }
     </style>
@@ -51,29 +51,89 @@
             >
               <i data-lucide="menu"></i>
             </button>
-            <a href="#!" class="hidden lg:inline-block font-medium text-dark-text hover:text-primary transition-all duration-400">Sign In</a>
-            <a href="#!" class="hidden lg:flex items-center justify-center font-medium h-11.25 px-11.25 border border-primary text-primary rounded-full hover:text-white hover:bg-primary transition-all duration-400">Sign Up</a>
+            <a
+              href="#!"
+              class="hidden lg:inline-block font-medium text-dark-text hover:text-primary transition-all duration-400"
+              >Sign In</a
+            >
+            <a
+              href="#!"
+              class="hidden lg:flex items-center justify-center font-medium h-11.25 px-11.25 border border-primary text-primary rounded-full hover:text-white hover:bg-primary transition-all duration-400"
+              >Sign Up</a
+            >
+          </nav>
+        </div>
+      </div>
     </header>
-    <div class="menu-bg-mask block lg:hidden fixed z-50 top-0 left-0 w-screen h-dvh bg-black/40 opacity-0 pointer-events-none transition-all duration-400"></div>
-    <aside class="mobile-menu block lg:hidden min-w-70 bg-white h-dvh fixed z-50 top-0 -left-full transition-all duration-400">
-      <div class="flex items-center justify-between py-4 px-4 border-b border-solid border-gray-300">
+    <div
+      class="menu-bg-mask block lg:hidden fixed z-50 top-0 left-0 w-screen h-dvh bg-black/40 opacity-0 pointer-events-none transition-all duration-400"
+    ></div>
+    <aside
+      class="mobile-menu flex flex-col lg:hidden min-w-70 bg-white h-dvh fixed z-50 top-0 -left-full transition-all duration-400"
+    >
+      <div
+        class="flex items-center justify-between py-4 px-4 border-b border-solid border-gray-300"
+      >
         <a href="index.html">
           <img src="src/images/logo.svg" alt="" class="w-30" />
         </a>
         <button class="menu-close-btn">
-          <i data-lucide="x"></i>
+          <i data-lucide="x" class="text-text-color"></i>
         </button>
       </div>
-      <nav>
-        <ul class="px-4 py-4">
-          <li><a href="#!" class="flex font-normal text-[15px] text-text-color py-1.5 px-3 transition-all duration-400 hover:text-white hover:bg-primary/90 rounded-lg">About</a></li>
-          <li><a href="#!" class="flex font-normal text-[15px] text-text-color py-1.5 px-3 transition-all duration-400 hover:text-white hover:bg-primary/90 rounded-lg">Features</a></li>
-          <li><a href="#!" class="flex font-normal text-[15px] text-text-color py-1.5 px-3 transition-all duration-400 hover:text-white hover:bg-primary/90 rounded-lg">Pricing</a></li>
-          <li><a href="#!" class="flex font-normal text-[15px] text-text-color py-1.5 px-3 transition-all duration-400 hover:text-white hover:bg-primary/90 rounded-lg">Testimonials</a></li>
-          <li><a href="#!" class="flex font-normal text-[15px] text-text-color py-1.5 px-3 transition-all duration-400 hover:text-white hover:bg-primary/90 rounded-lg">Help</a></li>
-          <li><a href="#!" class="flex font-normal text-[15px] text-text-color py-1.5 px-3 transition-all duration-400 hover:text-white hover:bg-primary/90 rounded-lg">Sign In</a></li>
-          <li><a href="#!" class="flex font-normal text-[15px] text-text-color py-1.5 px-3 transition-all duration-400 hover:text-white hover:bg-primary/90 rounded-lg">Sign Up</a></li>
-        </ul>
+      <div class="flex-1">
+        <nav>
+          <ul class="px-4 py-4">
+            <li>
+              <a
+                href="#!"
+                class="flex font-normal text-[15px] text-text-color py-1.5 px-3 transition-all duration-400 hover:text-white hover:bg-primary/90 rounded-lg"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="#!"
+                class="flex font-normal text-[15px] text-text-color py-1.5 px-3 transition-all duration-400 hover:text-white hover:bg-primary/90 rounded-lg"
+                >Features</a
+              >
+            </li>
+            <li>
+              <a
+                href="#!"
+                class="flex font-normal text-[15px] text-text-color py-1.5 px-3 transition-all duration-400 hover:text-white hover:bg-primary/90 rounded-lg"
+                >Pricing</a
+              >
+            </li>
+            <li>
+              <a
+                href="#!"
+                class="flex font-normal text-[15px] text-text-color py-1.5 px-3 transition-all duration-400 hover:text-white hover:bg-primary/90 rounded-lg"
+                >Testimonials</a
+              >
+            </li>
+            <li>
+              <a
+                href="#!"
+                class="flex font-normal text-[15px] text-text-color py-1.5 px-3 transition-all duration-400 hover:text-white hover:bg-primary/90 rounded-lg"
+                >Help</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <nav class="flex items-center gap-4 px-4 py-4">
+        <a
+          href="#!"
+          class="grow flex justify-center font-normal text-[15px] text-text-color py-2 px-3.5 transition-all duration-400 border border-primary hover:text-white hover:bg-primary rounded-full"
+          >Sign In</a
+        >
+        <a
+          href="#!"
+          class="grow flex justify-center font-normal text-[15px] text-text-color py-2 px-3.5 transition-all duration-400 border border-primary hover:text-white hover:bg-primary rounded-full"
+          >Sign Up</a
+        >
       </nav>
     </aside>
     <main></main>
