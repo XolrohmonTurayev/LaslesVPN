@@ -1,15 +1,12 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="shortcut icon"
-      href="src/images/favicon.svg"
-      type="image/x-icon"
-    />
-    <style type="text/tailwindcss">
-      @theme {
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="src/images/favicon.svg" type="image/x-icon" />
+  <style type="text/tailwindcss">
+    @theme {
         --font-primary: "Rubik";
         --color-bg-color: #f53838;
         --color-primary: #f53838;
@@ -17,188 +14,161 @@
         --color-text-color: #4f5665;
       }
     </style>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-    <script src="https://unpkg.com/lucide@latest"></script>
-    <link
-      href="https://fonts.googleapis.com/css?family=Rubik:300,regular,500,600,700,800,900,300italic,italic,500italic,600italic,700italic,800italic,900italic"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="src/css/style.css" />
-    <title>LaslesVPN</title>
-  </head>
-  <body>
-    <header>
-      <div class="container">
-        <div class="flex items-center justify-between py-4 gap-10">
-          <a href="index.html">
-            <img src="src/images/logo.svg" alt="" class="w-36" />
-          </a>
-          <nav class="hidden lg:block">
-            <ul class="flex items-center justify-center gap-10">
-              <li class="font-primary text-text-color">About</li>
-              <li class="font-primary text-text-color">Features</li>
-              <li class="font-primary text-text-color">Pricing</li>
-              <li class="font-primary text-text-color">Testimonials</li>
-              <li class="font-primary text-text-color">Help</li>
-            </ul>
-          </nav>
-          <nav class="flex items-center justify-center gap-7.5">
-            <button
-              class="menu-btn h-8 aspect-square flex lg:hidden items-center justify-center border border-primary text-primary rounded-md"
-            >
-              <i data-lucide="menu"></i>
-            </button>
-            <a
-              href="#!"
-              class="hidden lg:inline-block font-medium text-dark-text hover:text-primary transition-all duration-400"
-              >Sign In</a
-            >
-            <a
-              href="#!"
-              class="hidden lg:flex items-center justify-center font-medium h-11.25 px-11.25 border border-primary text-primary rounded-full hover:text-white hover:bg-primary transition-all duration-400"
-              >Sign Up</a
-            >
-          </nav>
-        </div>
-      </div>
-    </header>
-    <div
-      class="menu-bg-mask block lg:hidden fixed z-50 top-0 left-0 w-screen h-dvh bg-black/40 opacity-0 pointer-events-none transition-all duration-400"
-    ></div>
-    <aside
-      class="mobile-menu flex flex-col lg:hidden min-w-70 bg-white h-dvh fixed z-50 top-0 -left-full transition-all duration-400"
-    >
-      <div
-        class="flex items-center justify-between py-4 px-4 border-b border-solid border-gray-300"
-      >
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link
+    href="https://fonts.googleapis.com/css?family=Rubik:300,regular,500,600,700,800,900,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="src/css/style.css" />
+  <title>LaslesVPN</title>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="flex items-center justify-between py-4 gap-10">
         <a href="index.html">
-          <img src="src/images/logo.svg" alt="" class="w-30" />
+          <img src="src/images/logo.svg" alt="" class="w-36" />
         </a>
-        <button class="menu-close-btn">
-          <i data-lucide="x" class="text-text-color"></i>
-        </button>
-      </div>
-      <div class="flex-1">
-        <nav>
-          <ul class="px-4 py-4">
-            <li>
-              <a
-                href="#!"
-                class="flex font-normal text-[15px] text-text-color py-1.5 px-3 transition-all duration-400 hover:text-white hover:bg-primary/90 rounded-lg"
-                >About</a
-              >
-            </li>
-            <li>
-              <a
-                href="#!"
-                class="flex font-normal text-[15px] text-text-color py-1.5 px-3 transition-all duration-400 hover:text-white hover:bg-primary/90 rounded-lg"
-                >Features</a
-              >
-            </li>
-            <li>
-              <a
-                href="#!"
-                class="flex font-normal text-[15px] text-text-color py-1.5 px-3 transition-all duration-400 hover:text-white hover:bg-primary/90 rounded-lg"
-                >Pricing</a
-              >
-            </li>
-            <li>
-              <a
-                href="#!"
-                class="flex font-normal text-[15px] text-text-color py-1.5 px-3 transition-all duration-400 hover:text-white hover:bg-primary/90 rounded-lg"
-                >Testimonials</a
-              >
-            </li>
-            <li>
-              <a
-                href="#!"
-                class="flex font-normal text-[15px] text-text-color py-1.5 px-3 transition-all duration-400 hover:text-white hover:bg-primary/90 rounded-lg"
-                >Help</a
-              >
-            </li>
+        <nav class="hidden lg:block">
+          <ul class="flex items-center justify-center gap-10">
+            <li class="font-primary text-text-color">About</li>
+            <li class="font-primary text-text-color">Features</li>
+            <li class="font-primary text-text-color">Pricing</li>
+            <li class="font-primary text-text-color">Testimonials</li>
+            <li class="font-primary text-text-color">Help</li>
           </ul>
         </nav>
+        <nav class="flex items-center justify-center gap-7.5">
+          <button
+            class="menu-btn h-8 aspect-square flex lg:hidden items-center justify-center border border-primary text-primary rounded-md">
+            <i data-lucide="menu"></i>
+          </button>
+          <a href="#!"
+            class="hidden lg:inline-block font-medium text-dark-text hover:text-primary transition-all duration-400">Sign
+            In</a>
+          <a href="#!"
+            class="hidden lg:flex items-center justify-center font-medium h-11.25 px-11.25 border border-primary text-primary rounded-full hover:text-white hover:bg-primary transition-all duration-400">Sign
+            Up</a>
+        </nav>
       </div>
-
-      <nav class="flex items-center gap-4 px-4 py-4">
-        <a
-          href="#!"
-          class="grow flex justify-center font-normal text-[15px] text-text-color py-2 px-3.5 transition-all duration-400 border border-primary hover:text-white hover:bg-primary rounded-full"
-          >Sign In</a
-        >
-        <a
-          href="#!"
-          class="grow flex justify-center font-normal text-[15px] text-text-color py-2 px-3.5 transition-all duration-400 border border-primary hover:text-white hover:bg-primary rounded-full"
-          >Sign Up</a
-        >
+    </div>
+  </header>
+  <div
+    class="menu-bg-mask block lg:hidden fixed z-50 top-0 left-0 w-screen h-dvh bg-black/40 opacity-0 pointer-events-none transition-all duration-400">
+  </div>
+  <aside
+    class="mobile-menu flex flex-col lg:hidden min-w-70 bg-white h-dvh fixed z-50 top-0 -left-full transition-all duration-400">
+    <div class="flex items-center justify-between py-4 px-4 border-b border-solid border-gray-300">
+      <a href="index.html">
+        <img src="src/images/logo.svg" alt="" class="w-30" />
+      </a>
+      <button class="menu-close-btn">
+        <i data-lucide="x" class="text-text-color"></i>
+      </button>
+    </div>
+    <div class="flex-1">
+      <nav>
+        <ul class="px-4 py-4">
+          <li>
+            <a href="#!"
+              class="flex font-normal text-[15px] text-text-color py-1.5 px-3 transition-all duration-400 hover:text-white hover:bg-primary/90 rounded-lg">About</a>
+          </li>
+          <li>
+            <a href="#!"
+              class="flex font-normal text-[15px] text-text-color py-1.5 px-3 transition-all duration-400 hover:text-white hover:bg-primary/90 rounded-lg">Features</a>
+          </li>
+          <li>
+            <a href="#!"
+              class="flex font-normal text-[15px] text-text-color py-1.5 px-3 transition-all duration-400 hover:text-white hover:bg-primary/90 rounded-lg">Pricing</a>
+          </li>
+          <li>
+            <a href="#!"
+              class="flex font-normal text-[15px] text-text-color py-1.5 px-3 transition-all duration-400 hover:text-white hover:bg-primary/90 rounded-lg">Testimonials</a>
+          </li>
+          <li>
+            <a href="#!"
+              class="flex font-normal text-[15px] text-text-color py-1.5 px-3 transition-all duration-400 hover:text-white hover:bg-primary/90 rounded-lg">Help</a>
+          </li>
+        </ul>
       </nav>
-    </aside>
-    <main>
-      <section class="md:py-20">
-        <div class="container">
-          <div class="flex flex-col sm:flex-row items-center gap-8">
-            <div class="w-full md:w-1/2 pt-10">
-              <h1 class="font-medium text-3xl md:text-5xl md:leading-17 text-dark-text mb-5">
-                Want anything to be easy with
-                <b class="font-bold">LaslesVPN.</b>
-              </h1>
-              <p class="text-sm leading-8 text-text-color font-normal mb-12">
-                Provide a network for all your needs with ease and fun using
-                <b class="font-medium">LaslesVPN</b> discover interesting
-                features from us.
-              </p>
-              <a
-                href="#!"
-                class="flex font-bold text-white bg-primary w-max rounded-lg px-10 py-2.5 relative z-0 drop-shadow-[0_12px_12px_rgba(245,56,56,0.35)]"
-                >Get started</a
-              >
+    </div>
+
+    <nav class="flex items-center gap-4 px-4 py-4">
+      <a href="#!"
+        class="grow flex justify-center font-normal text-[15px] text-text-color py-2 px-3.5 transition-all duration-400 border border-primary hover:text-white hover:bg-primary rounded-full">Sign
+        In</a>
+      <a href="#!"
+        class="grow flex justify-center font-normal text-[15px] text-text-color py-2 px-3.5 transition-all duration-400 border border-primary hover:text-white hover:bg-primary rounded-full">Sign
+        Up</a>
+    </nav>
+  </aside>
+  <main>
+    <section class="md:py-20">
+      <div class="container">
+        <div class="flex flex-col sm:flex-row items-center gap-8">
+          <div class="w-full md:w-1/2 pt-10">
+            <h1 class="font-medium text-3xl md:text-5xl md:leading-17 text-dark-text mb-5">
+              Want anything to be easy with
+              <b class="font-bold">LaslesVPN.</b>
+            </h1>
+            <p class="text-sm leading-8 text-text-color font-normal mb-12">
+              Provide a network for all your needs with ease and fun using
+              <b class="font-medium">LaslesVPN</b> discover interesting
+              features from us.
+            </p>
+            <a href="#!"
+              class="flex font-bold text-white bg-primary w-max rounded-lg px-10 py-2.5 relative z-0 drop-shadow-[0_12px_12px_rgba(245,56,56,0.35)]">Get
+              started</a>
+          </div>
+          <div class="w-full md:w-1/2">
+            <img src="src/images/hero.png" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="relative z-10">
+      <div class="container">
+        <div class="grid grid-cols-1 md:grid-cols-3 bg-white rounded-xl py-8 shadow-xl">
+          <div class="flex items-center justify-center gap-6 py-4">
+            <div class="w-11 h-11 rounded-full bg-primary/10 text-primary flex items-center justify-center">
+              <i data-lucide="user" class="w-4 h-4"></i>
             </div>
-            <div class="w-full md:w-1/2">
-              <img src="src/images/hero.png" alt="">
+            <div>
+              <p class="font-medium text-xl text-dark-text">90+</p>
+              <p class="text-text-color">Users</p>
+            </div>
+          </div>
+
+          <div class="flex items-center justify-center gap-6 py-4 border-t md:border-t-0 md:border-l-2 border-gray-200">
+            <div class="w-11 h-11 rounded-full bg-primary/10 text-primary flex items-center justify-center">
+              <i data-lucide="map-pin" class="w-4 h-4"></i>
+            </div>
+            <div>
+              <p class="font-medium text-xl text-dark-text">30+</p>
+              <p class="text-text-color">Locations</p>
+            </div>
+          </div>
+
+          <div class="flex items-center justify-center gap-6 py-4 border-t md:border-t-0 md:border-l-2 border-gray-200">
+            <div class="w-11 h-11 rounded-full bg-primary/10 text-primary flex items-center justify-center">
+              <i data-lucide="server" class="w-4 h-4"></i>
+            </div>
+            <div>
+              <p class="font-medium text-xl text-dark-text">50+</p>
+              <p class="text-text-color">Servers</p>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="relative z-10">
-        <div class="container">
-          <div class="grid grid-cols-1 md:grid-cols-3 bg-white rounded-xl py-8 shadow-xl">
-            <div class="flex items-center justify-center gap-6 py-4">
-              <div class="w-11 h-11 rounded-full bg-primary/10 text-primary flex items-center justify-center">
-                <i data-lucide="user" class="w-4 h-4"></i>
-              </div>
-              <div>
-                <p class="font-medium text-xl text-dark-text">90+</p>
-                <p class="text-text-color">Users</p>
-              </div>
-            </div>
-
-            <div class="flex items-center justify-center gap-6 py-4 border-t md:border-t-0 md:border-l-2 border-gray-200">
-              <div class="w-11 h-11 rounded-full bg-primary/10 text-primary flex items-center justify-center">
-                <i data-lucide="map-pin" class="w-4 h-4"></i>
-              </div>
-              <div>
-                <p class="font-medium text-xl text-dark-text">30+</p>
-                <p class="text-text-color">Locations</p>
-              </div>
-            </div>
-
-            <div class="flex items-center justify-center gap-6 py-4 border-t md:border-t-0 md:border-l-2 border-gray-200">
-              <div class="w-11 h-11 rounded-full bg-primary/10 text-primary flex items-center justify-center">
-                <i data-lucide="server" class="w-4 h-4"></i>
-              </div>
-              <div>
-                <p class="font-medium text-xl text-dark-text">50+</p>
-                <p class="text-text-color">Servers</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="py-20 md:py-32">
-        <div class="container">
+    <section class="py-20 md:py-32">
+      <div class="container">
+        <div class="flex flex-col md:flex-row">
+          <img src="src/images/Illustration 2.png" alt="">
           <div class="w-full md:w-1/2 md:ml-auto">
             <h2 class="font-medium text-3xl text-dark-text mb-5">
               We Provide Many <br />
@@ -237,17 +207,102 @@
             </ul>
           </div>
         </div>
-      </section>
-    </main>
-    <footer></footer>
-    <script>
-      lucide.createIcons({
-        attrs: {
-          class: ["my-custom-class"],
-          "stroke-width": 1.75,
-        },
-      });
-    </script>
-    <script src="src/js/app.js"></script>
-  </body>
+      </div>
+    </section>
+
+    <section class="py-12">
+      <div class="container">
+        <h2 class="font-medium text-3xl text-dark-text mb-5">Choose Your Plan</h2>
+        <p class="text-sm leading-8 text-text-color max-w-md mb-6">Let's choose the package that is best for you and
+          explore it happily and cheerfully.</p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="flex flex-col items-center border border-primary py-10 px-11 rounded-md">
+            <img src="src/images/free-plan.png" class="w-24 mb-3.5" alt="">
+            <h3 class="font-medium text-dark-text mb-5">Free Plan</h3>
+            <ul class="space-y-2 mb-12 flex-1">
+              <li class="flex items-center gap-2">
+                <img src="src/images/jam_check.svg" alt="" class="w-6">Unlimited Bandwitch
+              </li>
+              <li class="flex items-center gap-2">
+                <img src="src/images/jam_check.svg" alt="" class="w-6">Encrypted Connection
+              </li>
+              <li class="flex items-center gap-2">
+                <img src="src/images/jam_check.svg" alt="" class="w-6">No Traffic Logs
+              </li>
+              <li class="flex items-center gap-2">
+                <img src="src/images/jam_check.svg" alt="" class="w-6">Works on All Devices
+              </li>
+            </ul>
+            <h2 class="font-medium text-3xl text-dark-text mb-5">Free</h2>
+            <a href="#!"
+              class=" lg:flex items-center justify-center font-medium h-11.25 px-11.25 border border-primary text-primary rounded-full hover:text-white hover:bg-primary transition-all duration-400">Select</a>
+          </div>
+          <div class="flex flex-col items-center border border-primary py-10 px-11 rounded-md">
+            <img src="src/images/free-plan.png" class="w-24 mb-3.5" alt="">
+            <h3 class="font-medium text-dark-text mb-5">Standard Plan</h3>
+            <ul class="space-y-2 mb-12 flex-1">
+              <li class="flex items-center gap-2">
+                <img src="src/images/jam_check.svg" alt="" class="w-6">Unlimited Bandwitch
+              </li>
+              <li class="flex items-center gap-2">
+                <img src="src/images/jam_check.svg" alt="" class="w-6">Encrypted Connection
+              </li>
+              <li class="flex items-center gap-2">
+                <img src="src/images/jam_check.svg" alt="" class="w-6">Yes Traffic Logs
+              </li>
+              <li class="flex items-center gap-2">
+                <img src="src/images/jam_check.svg" alt="" class="w-6">Works on All Devices
+              </li>
+              <li class="flex items-center gap-2">
+                <img src="src/images/jam_check.svg" alt="" class="w-6">Connect Anyware
+              </li>
+            
+            </ul>
+            <h2 class="text-text-color text-3xl text-dark-text mb-5"><b class="text-dark-text">$9</b>/ mo</h2>
+            <a href="#!"
+              class=" lg:flex items-center justify-center font-medium h-11.25 px-11.25 border border-primary text-primary rounded-full hover:text-white hover:bg-primary transition-all duration-400">Select</a>
+          </div>
+          <div class="flex flex-col items-center border border-primary py-10 px-11 rounded-md">
+            <img src="src/images/free-plan.png" class="w-24 mb-3.5" alt="">
+            <h3 class="font-medium text-dark-text mb-5">Premium Plan</h3>
+            <ul class="space-y-2 mb-12 flex-1">
+              <li class="flex items-center gap-2">
+                <img src="src/images/jam_check.svg" alt="" class="w-6">Unlimited Bandwitch
+              </li>
+              <li class="flex items-center gap-2">
+                <img src="src/images/jam_check.svg" alt="" class="w-6">Encrypted Connection
+              </li>
+              <li class="flex items-center gap-2">
+                <img src="src/images/jam_check.svg" alt="" class="w-6">Yes Traffic Logs
+              </li>
+              <li class="flex items-center gap-2">
+                <img src="src/images/jam_check.svg" alt="" class="w-6">Works on All Devices
+              </li>
+              <li class="flex items-center gap-2">
+                <img src="src/images/jam_check.svg" alt="" class="w-6">Connect Anyware
+              </li>
+              <li class="flex items-center gap-2">
+                <img src="src/images/jam_check.svg" alt="" class="w-6">Get New Features
+              </li>
+            </ul>
+            <h2 class="text-text-color text-3xl text-dark-text mb-5"><b class="text-dark-text">$12</b>/ mo</h2>
+            <a href="#!"
+              class=" lg:flex items-center justify-center font-medium h-11.25 px-11.25 border border-primary text-primary rounded-full hover:text-white hover:bg-primary transition-all duration-400">Select</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer></footer>
+  <script>
+    lucide.createIcons({
+      attrs: {
+        class: ["my-custom-class"],
+        "stroke-width": 1.75,
+      },
+    });
+  </script>
+  <script src="src/js/app.js"></script>
+</body>
+
 </html>
