@@ -1,7 +1,6 @@
 @import "tailwindcss";
 
 body {
-  background-color: var(--color-bg-color);
   font-family: var(--font-primary);
 }
 
@@ -15,4 +14,18 @@ button {
   max-width: 1140px;
   padding: 0 20px;
   margin: 0 auto;
+}
+
+.testimonials-swiper-pagination .swiper-pagination-bullet {
+  width: 15px;
+  height: 15px;
+  background: #dde0e4;
+  border-radius: 9999px;
+  transition: 0.3s;
+}
+
+.testimonials-swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  width: 45px;
+  height: 15px;
+  background: var(--color-primary);
 }
