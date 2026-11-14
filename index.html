@@ -21,7 +21,7 @@
     <style type="text/tailwindcss">
       @theme {
         --font-primary: "Rubik";
-        --color-bg-color: #f6f6f6;
+        --color-bg-color: #fcfcfc;
         --color-primary: #f53838;
         --color-dark-text: #0b132a;
         --color-text-color: #4f5665;
@@ -276,18 +276,22 @@
         </div>
       </section>
 
-      <section class="py-12">
+      <section class="py-12 bg-linear-to-b from-[#f6f6f6] to-bg-color">
         <div class="container">
-          <h2 class="font-medium text-3xl text-dark-text mb-5">
+          <h2
+            class="font-medium text-3xl text-dark-text mb-5 max-w-md text-center mx-auto"
+          >
             Choose Your Plan
           </h2>
-          <p class="text-sm leading-8 text-text-color max-w-md mb-6">
+          <p
+            class="text-sm leading-8 text-text-color max-w-md mb-6 text-center mx-auto"
+          >
             Let's choose the package that is best for you and explore it happily
             and cheerfully.
           </p>
           <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             <div
-              class="flex flex-col items-center border border-primary py-10 px-11 rounded-md"
+              class="flex flex-col items-center border border-primary py-10 px-11 rounded-md bg-white"
             >
               <img src="src/images/free-plan.png" class="w-24 mb-3.5" alt="" />
               <h3 class="font-medium text-dark-text mb-5">Free Plan</h3>
@@ -323,7 +327,7 @@
               >
             </div>
             <div
-              class="flex flex-col items-center border border-primary py-10 px-11 rounded-md"
+              class="flex flex-col items-center border border-primary py-10 px-11 rounded-md bg-white"
             >
               <img src="src/images/free-plan.png" class="w-24 mb-3.5" alt="" />
               <h3 class="font-medium text-dark-text mb-5">Standard Plan</h3>
@@ -368,7 +372,7 @@
               >
             </div>
             <div
-              class="flex flex-col items-center border border-primary py-10 px-11 rounded-md"
+              class="flex flex-col items-center border border-primary py-10 px-11 rounded-md bg-white"
             >
               <img src="src/images/free-plan.png" class="w-24 mb-3.5" alt="" />
               <h3 class="font-medium text-dark-text mb-5">Premium Plan</h3>
@@ -474,7 +478,7 @@
           </ul>
         </div>
       </section>
-      <section class="py-16">
+      <section class="py-16 overflow-x-hidden">
         <div class="container">
           <h2
             class="font-medium text-3xl text-dark-text mb-5 items-center justify-center w-max max-w-full mx-auto text-center"
@@ -487,18 +491,145 @@
             These are the stories of our customers who have joined us with great
             pleasure when using this crazy feature.
           </p>
-          <div class="swiper testimonials-swiper">
+          <div class="swiper testimonials-swiper overflow-visible! mb-15">
             <div class="swiper-wrapper">
-              <div class="swiper-slide bg-gray-50 border border-gray-200 p-6 rounded-2xl">my swiper slide 1</div>
-              <div class="swiper-slide bg-gray-50 border border-gray-200 p-6 rounded-2xl">my swiper slide 2</div>
-              <div class="swiper-slide bg-gray-50 border border-gray-200 p-6 rounded-2xl">my swiper slide 3</div>
-              <div class="swiper-slide bg-gray-50 border border-gray-200 p-6 rounded-2xl">my swiper slide 4</div>
-              <div class="swiper-slide bg-gray-50 border border-gray-200 p-6 rounded-2xl">my swiper slide 5</div>
+              <div
+                class="swiper-slide bg-gray-50 border border-gray-200 p-6 rounded-2xl"
+              >
+                <div class="flex items-center justify-between mb-5">
+                  <div class="flex items-center gap-5">
+                    <img
+                      src="src/images/client-1.png"
+                      alt=""
+                      class="size-12.5"
+                    />
+                    <div>
+                      <h3 class="text-dark-text text-lg font-medium mb-1">
+                        Viezh Robert
+                      </h3>
+                      <h5 class="text-text-color text-sm font-normal">
+                        Warsaw, Poland
+                      </h5>
+                    </div>
+                  </div>
+                  <div class="flex items-center gap-2.5">
+                    <p class="text-dark-text">4.5</p>
+                    <img src="src/images/star.svg" alt="" />
+                  </div>
+                </div>
+                <p class="leading-7.5">
+                  “Wow... I am very happy to use this VPN, it turned out to be
+                  more than my expectations and so far there have been no
+                  problems. LaslesVPN always the best”.
+                </p>
+              </div>
+              <div
+                class="swiper-slide bg-gray-50 border border-gray-200 p-6 rounded-2xl"
+              >
+                <div class="flex items-center justify-between mb-5">
+                  <div class="flex items-center gap-5">
+                    <img
+                      src="src/images/client-1.png"
+                      alt=""
+                      class="size-12.5"
+                    />
+                    <div>
+                      <h3 class="text-dark-text text-lg font-medium mb-1">
+                        Viezh Robert
+                      </h3>
+                      <h5 class="text-text-color text-sm font-normal">
+                        Warsaw, Poland
+                      </h5>
+                    </div>
+                  </div>
+                  <div class="flex items-center gap-2.5">
+                    <p class="text-dark-text">4.5</p>
+                    <img src="src/images/star.svg" alt="" />
+                  </div>
+                </div>
+                <p class="leading-7.5">
+                  “Wow... I am very happy to use this VPN, it turned out to be
+                  more than my expectations and so far there have been no
+                  problems. LaslesVPN always the best”.
+                </p>
+              </div>
+              <div
+                class="swiper-slide bg-gray-50 border border-gray-200 p-6 rounded-2xl"
+              >
+                <div class="flex items-center justify-between mb-5">
+                  <div class="flex items-center gap-5">
+                    <img
+                      src="src/images/client-1.png"
+                      alt=""
+                      class="size-12.5"
+                    />
+                    <div>
+                      <h3 class="text-dark-text text-lg font-medium mb-1">
+                        Viezh Robert
+                      </h3>
+                      <h5 class="text-text-color text-sm font-normal">
+                        Warsaw, Poland
+                      </h5>
+                    </div>
+                  </div>
+                  <div class="flex items-center gap-2.5">
+                    <p class="text-dark-text">4.5</p>
+                    <img src="src/images/star.svg" alt="" />
+                  </div>
+                </div>
+                <p class="leading-7.5">
+                  “Wow... I am very happy to use this VPN, it turned out to be
+                  more than my expectations and so far there have been no
+                  problems. LaslesVPN always the best”.
+                </p>
+              </div>
+              <div
+                class="swiper-slide bg-gray-50 border border-gray-200 p-6 rounded-2xl"
+              >
+                <div class="flex items-center justify-between mb-5">
+                  <div class="flex items-center gap-5">
+                    <img
+                      src="src/images/client-1.png"
+                      alt=""
+                      class="size-12.5"
+                    />
+                    <div>
+                      <h3 class="text-dark-text text-lg font-medium mb-1">
+                        Viezh Robert
+                      </h3>
+                      <h5 class="text-text-color text-sm font-normal">
+                        Warsaw, Poland
+                      </h5>
+                    </div>
+                  </div>
+                  <div class="flex items-center gap-2.5">
+                    <p class="text-dark-text">4.5</p>
+                    <img src="src/images/star.svg" alt="" />
+                  </div>
+                </div>
+                <p class="leading-7.5">
+                  “Wow... I am very happy to use this VPN, it turned out to be
+                  more than my expectations and so far there have been no
+                  problems. LaslesVPN always the best”.
+                </p>
+              </div>
             </div>
           </div>
           <div class="flex items-center justify-between">
             <div class="testimonials-swiper-pagination"></div>
             <!-- Navigation uchun joy start-->
+            <div class="flex gap-5">
+              <button
+                class="testimonials-swiper-navigation-button-prev size-15 flex items-center justify-center rounded-full border-2 border-primary transition-all duration-300 text-primary hover:text-white bg-transparent hover:bg-primary"
+              >
+                <i data-lucide="arrow-left" stroke-width="2"></i>
+              </button>
+              <button
+                class="testimonials-swiper-navigation-button-next size-15 flex items-center justify-center rounded-full border-2 border-primary transition-all duration-300 text-primary hover:text-white bg-transparent hover:bg-primary"
+              >
+                <i data-lucide="arrow-right" stroke-width="2"></i>
+              </button>
+            </div>
             <!-- Navigation uchun joy end-->
           </div>
         </div>
